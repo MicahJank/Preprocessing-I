@@ -138,7 +138,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  width: 95%;
+  width: 80%;
   margin: auto;
 }
 nav {
@@ -174,4 +174,28 @@ header button {
   width: 150px;
   padding: 10px 0;
   cursor: pointer;
+}
+.main-content {
+  display: flex;
+  margin: 30px 0;
+  justify-content: space-between;
+}
+.main-content div {
+  width: 45%;
+}
+.main-content .about-me h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.main-content .about-me p {
+  line-height: 1.5rem;
+}
+.main-content .skills h3 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+.main-content .skills ul li {
+  font-size: 1.2rem;
+  padding: 5px;
+  border: 1px solid lightgrey;
 }
