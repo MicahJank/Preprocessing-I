@@ -199,3 +199,38 @@ header button {
   padding: 5px;
   border: 1px solid lightgrey;
 }
+.work-history {
+  margin-bottom: 30px;
+}
+.work-history .work {
+  width: 100%;
+}
+.work-history h3 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+.work-history tr {
+  display: flex;
+  justify-content: space-between;
+}
+.work-history tr th {
+  padding: 10px 0;
+  text-align: left;
+}
+.work-history tr th:last-child {
+  padding-right: 40px;
+}
+.work-history tr td {
+  padding: 10px 0;
+}
+.work-history tr td:last-child {
+  padding-right: 30px;
+}
+.work-history tr:nth-child(even) {
+  background-color: lightgrey;
+}
+footer {
+  background-color: darkgrey;
+  text-align: center;
+  padding: 50px 0;
+}
