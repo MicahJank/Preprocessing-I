@@ -137,3 +137,41 @@ body {
 html {
   font-size: 62.5%;
 }
+body {
+  width: 95%;
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  background: lightgray;
+  padding: 4rem 2rem;
+}
+header img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+header h1 {
+  font-size: 4rem;
+  margin: 5px 0;
+}
+header p {
+  font-size: 2rem;
+  margin: 5px 0;
+}
+header hr {
+  width: 100%;
+  border-style: solid;
+  color: darkgrey;
+}
+header button {
+  width: 150px;
+  padding: 10px 0;
+  cursor: pointer;
+}
