@@ -158,7 +158,11 @@ table {
 	width: 150px;
 	padding: 10px 0;
 	cursor: pointer;
+}
 
+.center() {
+	display: flex;
+	justify-content: center;
 }
 
 /* Set every element's box-sizing to border-box */
@@ -322,7 +326,6 @@ header {
 		width: 100%;
 	}
 
-
 	h3 {
 		font-size: 2rem;
 		margin-bottom: 5px;
@@ -331,12 +334,16 @@ header {
 	tr {
 		display: flex;
 		justify-content: space-between;
+		font-size: 1.5rem;
 
 
 		th {
-
 			padding: 10px 0;
 			text-align: left;
+		}
+
+		th:first-child {
+			padding-left: 10px;
 		}
 
 		th:last-child {
@@ -348,8 +355,16 @@ header {
 			padding: 10px 0;
 		}
 
+		td:first-child {
+			padding-left: 10px;
+		}
+
+		td:nth-child(2) {
+			padding-left: 38px;
+		}
+
 		td:last-child {
-			padding-right: 30px;
+			padding-right: 70px;
 		}
 	}
 
@@ -358,7 +373,31 @@ header {
 	}
 }
 
+// Contact
 .contact-me {
+
+	form {
+		.center;
+		justify-content: space-between;
+
+		.input-fields-container {
+			display: flex;
+			flex-direction: column;
+			align-content: flex-start;
+			width: 40%;
+
+			input {
+				padding: 10px 5px;
+				margin: 10px 0;
+			}
+		}
+
+		.message-container {
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+		}
+	}
 
 	h2 {
 		font-size: 3rem;

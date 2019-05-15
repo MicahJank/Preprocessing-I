@@ -263,10 +263,14 @@ header button {
 .work-history tr {
   display: flex;
   justify-content: space-between;
+  font-size: 1.5rem;
 }
 .work-history tr th {
   padding: 10px 0;
   text-align: left;
+}
+.work-history tr th:first-child {
+  padding-left: 10px;
 }
 .work-history tr th:last-child {
   padding-right: 40px;
@@ -274,11 +278,37 @@ header button {
 .work-history tr td {
   padding: 10px 0;
 }
+.work-history tr td:first-child {
+  padding-left: 10px;
+}
+.work-history tr td:nth-child(2) {
+  padding-left: 38px;
+}
 .work-history tr td:last-child {
-  padding-right: 30px;
+  padding-right: 70px;
 }
 .work-history tr:nth-child(even) {
   background-color: #E0E0E0;
+}
+.contact-me form {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.contact-me form .input-fields-container {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  width: 40%;
+}
+.contact-me form .input-fields-container input {
+  padding: 10px 5px;
+  margin: 10px 0;
+}
+.contact-me form .message-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 .contact-me h2 {
   font-size: 3rem;

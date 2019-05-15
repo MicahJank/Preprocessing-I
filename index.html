@@ -24,6 +24,7 @@
 
 <body>
 
+  <!-- Navigation -->
   <nav>
     <a href="#">Home</a>
     <a href="#">About</a>
@@ -31,6 +32,8 @@
     <a href="#">Contact</a>
   </nav>
 
+
+  <!-- Header -->
   <header>
     <img src="images/Micah.jpg" alt="picture of micah">
     <h1>Micah Jank - Software Engineer</h1>
@@ -43,6 +46,7 @@
     <button>Lets Team Up!</button>
   </header>
 
+  <!-- Main Content -->
   <section class="main-content">
     <div class="about-me">
       <h2>About Me</h2>
@@ -63,12 +67,13 @@
     </div>
   </section>
 
+  <!-- Work History -->
   <section class="work-history">
     <h3>Work History</h3>
 
     <table class="work">
       <tr>
-        <th>Yrs</th>
+        <th>Years</th>
         <th>Company</th>
         <th>Title</th>
         <th>Tech Used</th>
@@ -97,11 +102,24 @@
     </table>
   </section>
 
+  <!-- Contact -->
   <div class="contact-me">
     <h2>Contact Me</h2>
-    <p>micahjank@gmail.com</p>
+    <form action="">
+      <div class="input-fields-container">
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+
+      <div class="message-container">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+    <!-- <p>micahjank@gmail.com</p> -->
   </div>
 
+  <!-- Footer -->
   <footer>
     <i class="far fa-copyright"></i><span>Micah Jank 2019</span>
   </footer>
