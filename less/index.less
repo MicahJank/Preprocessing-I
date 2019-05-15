@@ -136,8 +136,29 @@ table {
 }
 
 // Variables
+// BASE COLORS
+@Alto: #E0E0E0;
+@Silver-Chalice: rgb(204, 204, 204);
+
+// Variable COLORS
+@header-box: @Alto;
+@footer-box: @Silver-Chalice;
+
+// FONTS
+@Open-Sans: 'Open Sans', serif;
 
 // Mixins
+.basic-hr() {
+	width: 100%;
+	border-style: solid;
+	color: @footer-box;
+}
+
+.header-button() {
+	width: 150px;
+	padding: 10px 0;
+	cursor: pointer;
+}
 
 /* Set every element's box-sizing to border-box */
 * {
@@ -152,6 +173,7 @@ body {
 // setting up easy math font sizing
 html {
 	font-size: 62.5%;
+	font-family: @Open-Sans;
 }
 
 // setting the width of the page
@@ -183,7 +205,7 @@ nav {
 header {
 	display: flex;
 	flex-direction: column;
-	background: lightgray;
+	background-color: @header-box;
 	padding: 4rem 2rem;
 
 	img {
@@ -204,23 +226,19 @@ header {
 	}
 
 	hr {
-		width: 100%;
-		border-style: solid;
-		color: darkgrey;
+		.basic-hr;
 	}
 
 	button {
-		width: 150px;
-		padding: 10px 0;
-		cursor: pointer;
+		.header-button;
 	}
 }
 
 // Main Content
 .main-content {
 	display: flex;
-	margin: 30px 0;
 	justify-content: space-between;
+	margin: 30px 0;
 
 	div {
 		width: 45%;
@@ -234,7 +252,8 @@ header {
 		}
 
 		p {
-			line-height: 1.5rem;
+			line-height: 2rem;
+			font-size: 1.5rem;
 		}
 	}
 
@@ -248,12 +267,12 @@ header {
 		ul {
 
 			li {
-				font-size: 1.2rem;
-				padding: 5px;
-				border: 1px solid lightgrey;
+				font-size: 1.5rem;
+				padding: 15px;
+				border: 1px solid @header-box;
 			}
 		}
-		
+
 	}
 }
 
@@ -265,7 +284,7 @@ header {
 	.work {
 		width: 100%;
 	}
-	
+
 
 	h3 {
 		font-size: 2rem;
@@ -275,10 +294,10 @@ header {
 	tr {
 		display: flex;
 		justify-content: space-between;
-		
+
 
 		th {
-			
+
 			padding: 10px 0;
 			text-align: left;
 		}
@@ -288,7 +307,7 @@ header {
 		}
 
 		td {
-			
+
 			padding: 10px 0;
 		}
 
@@ -298,14 +317,14 @@ header {
 	}
 
 	tr:nth-child(even) {
-		background-color: lightgrey;
+		background-color: @header-box;
 	}
 }
 
 
 // Footer
 footer {
-	background-color: darkgrey;
+	background-color: @footer-box;
 	text-align: center;
-	padding: 50px 0 0;
+	padding: 20px 0 50px;
 }

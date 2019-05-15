@@ -136,6 +136,7 @@ body {
 }
 html {
   font-size: 62.5%;
+  font-family: 'Open Sans', serif;
 }
 body {
   width: 80%;
@@ -158,7 +159,7 @@ nav a:last-child {
 header {
   display: flex;
   flex-direction: column;
-  background: lightgray;
+  background-color: #E0E0E0;
   padding: 4rem 2rem;
 }
 header img {
@@ -178,7 +179,7 @@ header p {
 header hr {
   width: 100%;
   border-style: solid;
-  color: darkgrey;
+  color: #cccccc;
 }
 header button {
   width: 150px;
@@ -187,8 +188,8 @@ header button {
 }
 .main-content {
   display: flex;
-  margin: 30px 0;
   justify-content: space-between;
+  margin: 30px 0;
 }
 .main-content div {
   width: 45%;
@@ -198,16 +199,17 @@ header button {
   margin-bottom: 10px;
 }
 .main-content .about-me p {
-  line-height: 1.5rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
 }
 .main-content .skills h3 {
   font-size: 2rem;
   margin-bottom: 5px;
 }
 .main-content .skills ul li {
-  font-size: 1.2rem;
-  padding: 5px;
-  border: 1px solid lightgrey;
+  font-size: 1.5rem;
+  padding: 15px;
+  border: 1px solid #E0E0E0;
 }
 .work-history {
   margin-bottom: 30px;
@@ -237,10 +239,10 @@ header button {
   padding-right: 30px;
 }
 .work-history tr:nth-child(even) {
-  background-color: lightgrey;
+  background-color: #E0E0E0;
 }
 footer {
-  background-color: darkgrey;
+  background-color: #cccccc;
   text-align: center;
-  padding: 50px 0 0;
+  padding: 20px 0 50px;
 }
