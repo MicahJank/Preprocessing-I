@@ -1,12 +1,21 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>My Resume</title>
+  <title>Micah Jank Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +23,107 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact</a>
+  </nav>
+
+
+  <!-- Header -->
+  <header>
+    <img src="images/Micah.jpg" alt="picture of micah">
+    <h1>Micah Jank - Software Engineer</h1>
+    <p>Cool catchphrase here.</p>
+
+    <hr>
+
+    <p>Some more cool stuff here.</p>
+
+    <button>Lets Team Up!</button>
+  </header>
+
+  <!-- Main Content -->
+  <section class="main-content">
+    <div class="about-me">
+      <h2>About Me</h2>
+      <p>I am currently a student at Lambda School, training to become a web developer. I love coding and always welcome
+        a challenge. Have an idea for a web app? I would love to be able to help make your idea become a reality!
+      </p>
+    </div>
+
+    <div class="skills">
+      <h3>What I Can Do</h3>
+      <ul>
+        <li>CSS/LESS</li>
+        <li>Javascript</li>
+        <li>Work in a team</li>
+        <li>Work solo</li>
+        <li>Eat all your cookies</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Work History -->
+  <section class="work-history">
+    <h3>Work History</h3>
+
+    <table class="work">
+      <tr>
+        <th>Years</th>
+        <th>Company</th>
+        <th>Title</th>
+        <th>Tech Used</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>Company1</td>
+        <td>Title1</td>
+        <td>Tech1</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Company2</td>
+        <td>Title2</td>
+        <td>Tech2</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>Company3</td>
+        <td>Title3</td>
+        <td>Tech3</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Contact -->
+  <div class="contact-me">
+    <h2>Contact Me</h2>
+    <form action="">
+      <div class="input-fields-container">
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+
+      <div class="message-container">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+    <!-- <p>micahjank@gmail.com</p> -->
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <i class="far fa-copyright"></i><span>Micah Jank 2019</span>
+  </footer>
+
 </body>
+
 </html>

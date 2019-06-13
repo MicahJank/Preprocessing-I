@@ -1,0 +1,43 @@
+// Header
+header {
+	display: flex;
+	flex-direction: column;
+	background-color: @header-box;
+	padding: 4rem 2rem;
+
+	@media(max-width: 500px) {
+		align-items: center;
+		text-align: center;
+	}
+
+	img {
+		width: 200px;
+		height: 200px;
+		object-fit: cover;
+		margin-bottom: 10px;
+	}
+
+	h1 {
+		font-size: 4rem;
+		margin: 5px 0;
+	}
+
+	p {
+		font-size: 2rem;
+		margin: 5px 0;
+	}
+
+	hr {
+		.basic-hr;
+	}
+
+	button {
+		.header-button;
+
+		@media(max-width: 500px) {
+			width: 100%;
+		}
+	}
+
+	
+}

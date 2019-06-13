@@ -1,1 +1,333 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', serif;
+}
+body {
+  width: 80%;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+}
+@media (max-width: 500px) {
+  nav {
+    justify-content: space-evenly;
+  }
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-right: 30px;
+  color: black;
+}
+nav a:last-child {
+  margin-right: 0;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #E0E0E0;
+  padding: 4rem 2rem;
+}
+@media (max-width: 500px) {
+  header {
+    align-items: center;
+    text-align: center;
+  }
+}
+header img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+header h1 {
+  font-size: 4rem;
+  margin: 5px 0;
+}
+header p {
+  font-size: 2rem;
+  margin: 5px 0;
+}
+header hr {
+  width: 100%;
+  border-style: solid;
+  color: #cccccc;
+}
+header button {
+  width: 150px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  header button {
+    width: 100%;
+  }
+}
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+@media (max-width: 500px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main-content div {
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .main-content div {
+    width: 90%;
+    text-align: center;
+    margin: 30px 0;
+  }
+}
+.main-content .about-me h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.main-content .about-me p {
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+.main-content .skills h3 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+.main-content .skills ul li {
+  font-size: 1.5rem;
+  padding: 15px;
+  border: 1px solid #E0E0E0;
+}
+.work-history {
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .work-history {
+    text-align: center;
+  }
+}
+.work-history .work {
+  width: 100%;
+}
+.work-history h3 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+.work-history tr {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.work-history tr th {
+  padding: 10px 0;
+  text-align: left;
+}
+.work-history tr th:first-child {
+  padding-left: 10px;
+}
+.work-history tr th:last-child {
+  padding-right: 40px;
+}
+.work-history tr td {
+  padding: 10px 0;
+}
+.work-history tr td:first-child {
+  padding-left: 10px;
+}
+.work-history tr td:nth-child(2) {
+  padding-left: 38px;
+}
+.work-history tr td:last-child {
+  padding-right: 70px;
+}
+.work-history tr:nth-child(even) {
+  background-color: #E0E0E0;
+}
+.contact-me form {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.contact-me form .input-fields-container {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  width: 40%;
+}
+.contact-me form .input-fields-container input {
+  padding: 10px 5px;
+  margin: 10px 0;
+}
+.contact-me form .message-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.contact-me h2 {
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  .contact-me h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+.contact-me p {
+  padding: 50px;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #E0E0E0;
+  margin-bottom: 20px;
+}
+footer {
+  background-color: #cccccc;
+  text-align: center;
+  padding: 20px 0 50px;
+}

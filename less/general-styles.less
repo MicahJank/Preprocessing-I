@@ -1,0 +1,25 @@
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+// setting up easy math font sizing
+html {
+	font-size: 62.5%;
+	font-family: @Open-Sans;
+}
+
+// setting the width of the page
+body {
+	width: 80%;
+	margin: auto;
+
+	@media(max-width: 500px) {
+		width: 100%;
+	}
+}

@@ -1,0 +1,58 @@
+// Work History
+.work-history {
+	margin-bottom: 30px;
+
+	@media(max-width: 500px) {
+		text-align: center;
+	} 
+
+	.work {
+		width: 100%;
+	}
+
+	h3 {
+		font-size: 2rem;
+		margin-bottom: 5px;
+	}
+
+	tr {
+		display: flex;
+		justify-content: space-between;
+		font-size: 1.5rem;
+
+
+		th {
+			padding: 10px 0;
+			text-align: left;
+		}
+
+		th:first-child {
+			padding-left: 10px;
+		}
+
+		th:last-child {
+			padding-right: 40px;
+		}
+
+		td {
+
+			padding: 10px 0;
+		}
+
+		td:first-child {
+			padding-left: 10px;
+		}
+
+		td:nth-child(2) {
+			padding-left: 38px;
+		}
+
+		td:last-child {
+			padding-right: 70px;
+		}
+	}
+
+	tr:nth-child(even) {
+		background-color: @header-box;
+	}
+}
